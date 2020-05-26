@@ -168,6 +168,11 @@ neural network
 
 # CoronaData
 ## Case Studies
+
+   * Exploratory Data Analysis on Covid19 Dataset 
+   * Implementation on Indian Subcontinent
+   * Time Searies Analysis using facebook Prophet
+   * Packages used : pandas, numpy, matplotlib, seaborn, prophet
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/India_crd.png "Confirmed vs Recovered vs Deaths")
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/confirmed%20cases.png "Confirmed")
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/deaths.png "Deaths")
