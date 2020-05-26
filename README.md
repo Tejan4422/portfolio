@@ -166,6 +166,16 @@ Neural Network withour hyper parameter tuning was able to record accuracy of 52%
 with hyperparameter tuning because of long waitings in training but with training accuracy close to 60% can be achieved with this
 neural network
 
+## Project 6:Testing Best fit Classification Algorithm & Hyperparametertuning
+* Dataset used : Titanic
+* Objective : Based on the data try to classify who would be saved after the disaster since there are very few life saver boats
+* Algorithms Used:
+   * Random Forest Classification
+   * Gradient Boost
+   * Decision Tree
+   * MLP Classifier
+
+
 # CoronaData
 ## Case Studies
 
