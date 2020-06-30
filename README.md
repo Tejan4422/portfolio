@@ -15,51 +15,33 @@
 ![alt text](https://github.com/Tejan4422/StockAnalysis-/blob/master/Case%20Studies/Fig_AXIS_High.png "Model Performance")
 ![alt text](https://github.com/Tejan4422/StockAnalysis-/blob/master/Case%20Studies/Fig_AXIS_Close.png "Model Performance")
 
-## Project 2: YouTube Trending Analysis
-## Overview
-* Scraping data from youtube
-  * Youtube API key is important in case you want to connect to youtube Dataset
-  * Use this key in your script to get data of trending videos on a particular day.
-* Cleaning Data
-  * Use lambda function to clean data
-* Model Building:
-  * Using youtube api key get data about recently added videos
-  * train classification model on trending data and recent data to classify whether video can be in trending tab or not
-  * need to run the script every day for at least two months to gather significant amount of data to train ML Model
-  * recently updated on 26/04/2020
-  * In order to predict whether a video can go viral or not create classification model whcih is trained on youtube data
-  * Hyper Parameter Tuning is required to selecet best possible algorithm
-  * Gradient Boosting, SVR, Random Forest, Decision Tree, MLP Classifier are amongst who performs well.
-* Case Studies:
-![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/Norma_distribution.png "Distribution Curve")
-![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/allView.png "Complete data")
-![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/boxplotcatIdlikes.png "Box Plot data")
-![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/heatmap.png "HeatMap")
+## Project 2: Convolutional Network to Detect Pneumonia 
+# Overview
+  * Building a CNN with TensorFlow backend
+  * Test on Single Image
+  * Model Production with Flask
+* Packages Used : 
+  * pandas, numpy , keras, tensorFlow, seaborn, flask, matplotlib
+* CNN Structure : 
+    1. CONV2D with filter size 3*3, No Padding, No Strides, activation Relu, Convert i/p to 64*64
+    2. MaxPooling with Pool size 2*2
+    3. CONV2D with filter size 3*3, No Padding, No Strides, activation Relu
+    4. MaxPooling with Pool size 2*2
+    5. Full Connection Activation Sigmoid, Optimizer = Adam, binary Cross Entropy
+    6. Model Accuracy on training Data 94%
+    7. Model Accuracy on Testing 88%
+    ![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/model_summary.png "Model Summary")
+* Case Studies : 
+Following is the MRI of a Normal Person Pneumonia -ve
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/normal.png "Negative Case")
+Following is the MRI of a Pneumonia +ve
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/pneumonia.png "Positive Case")
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/model_summary.png "Model Summary")
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/traning_val_accuracy.png "Model Summary")
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/loss.png "Model Summary")
+![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/Model_deployment.png "Final Product")
 
-## Project 3: FIFA 19 Analysis to help Managers make better signings
-## Overview
-* Tasks achieved
-    * Exploratory data analysis on FIFA 19 dataset 
-    * Help managers make better signings
-    * Focus on young talents
-## Data visualization
-Remeber that in this stage our goal is not only to explore our data in order to get better predictions. 
-We also want to get better understanding what is in data and explore data in 'normal' way. 
-This kind of approch can be useful if we have to do some feature engineering, where good data understanding can really 
-help to produce better features.
-Following heat map shows the most effective ability of a player which contributes the most on his overall figure is his Composure.
-![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/heatmap.png "Heatmap")
-Some of the important insights from following bar chart
-    * There's a huge competition in forward line specifically in between strikers and centre forwards
-    * When it comes to sign a goalkeepers there are abundant of options
-    * If a player wants to make his way to become a legend there are few positions to consider LF, LAM, RAM
-![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/positionsbar.png "Positions")
-I created a small dataset of youth prodigies who have show  a great potential and are must ins for a manager to build a squad
-![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/positionsbar_youth.png "Positions")
-![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/workrate.png "workrate")
-![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/workrate_youth.png "youth workrate")
-
-## Project 4: Glassdoor Job Analysis
+## Project 3:Glassdoor Job Analysis
 ## Overview
 * Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job.
 * Scraped over 1000 job descriptions from glassdoor using python and selenium
@@ -120,6 +102,30 @@ The Random Forest model far outperformed the other approaches on the test and va
 *	**Linear Regression**: MAE = 18.86
 *	**Ridge Regression**: MAE = 19.67
 
+## Project 4: FIFA 19 Analysis to help Managers make better signings
+## Overview
+* Tasks achieved
+    * Exploratory data analysis on FIFA 19 dataset 
+    * Help managers make better signings
+    * Focus on young talents
+## Data visualization
+Remeber that in this stage our goal is not only to explore our data in order to get better predictions. 
+We also want to get better understanding what is in data and explore data in 'normal' way. 
+This kind of approch can be useful if we have to do some feature engineering, where good data understanding can really 
+help to produce better features.
+Following heat map shows the most effective ability of a player which contributes the most on his overall figure is his Composure.
+![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/heatmap.png "Heatmap")
+Some of the important insights from following bar chart
+    * There's a huge competition in forward line specifically in between strikers and centre forwards
+    * When it comes to sign a goalkeepers there are abundant of options
+    * If a player wants to make his way to become a legend there are few positions to consider LF, LAM, RAM
+![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/positionsbar.png "Positions")
+I created a small dataset of youth prodigies who have show  a great potential and are must ins for a manager to build a squad
+![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/positionsbar_youth.png "Positions")
+![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/workrate.png "workrate")
+![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/workrate_youth.png "youth workrate")
+
+
 ## Project 5: Wine Task(NLP and variety of berries classification)
 ## Overview
 * Tasks achieved
@@ -175,10 +181,8 @@ neural network
    * Decision Tree
    * MLP Classifier
 
-
-# CoronaData
+# Project 7 : Corona Analysis
 ## Case Studies
-
    * Exploratory Data Analysis on Covid19 Dataset 
    * Implementation on Indian Subcontinent
    * Time Searies Analysis using facebook Prophet
@@ -194,3 +198,25 @@ neural network
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/prophet_recovered.png "Prophet Recovered")
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/prophet_recovered_components.png "Prophet Recovered components")
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/prophet_recovered.png "Pophet Recovered")
+
+# Project 8 : YouTube Trending Analysis
+## Overview
+* Scraping data from youtube
+  * Youtube API key is important in case you want to connect to youtube Dataset
+  * Use this key in your script to get data of trending videos on a particular day.
+* Cleaning Data
+  * Use lambda function to clean data
+* Model Building:
+  * Using youtube api key get data about recently added videos
+  * train classification model on trending data and recent data to classify whether video can be in trending tab or not
+  * need to run the script every day for at least two months to gather significant amount of data to train ML Model
+  * recently updated on 26/04/2020
+  * In order to predict whether a video can go viral or not create classification model whcih is trained on youtube data
+  * Hyper Parameter Tuning is required to selecet best possible algorithm
+  * Gradient Boosting, SVR, Random Forest, Decision Tree, MLP Classifier are amongst who performs well.
+* Case Studies:
+![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/Norma_distribution.png "Distribution Curve")
+![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/allView.png "Complete data")
+![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/boxplotcatIdlikes.png "Box Plot data")
+![alt text](https://github.com/Tejan4422/Youtube-Trending/blob/master/output/heatmap.png "HeatMap")
+
