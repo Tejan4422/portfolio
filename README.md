@@ -1,5 +1,12 @@
 # Projects
-## Project 1: Stock Market Predictions
+## Case Study : Deep Deterministic Policy Gradient to solve OpenAI LunarLander
+* Actor-Critic combines two main methods in reinforcement learning:  policy based algorithms and value based algorithms. The result is a powerful method that is highly suited for environmentswith continuous action spaces.  The goal of the actor-critic method is to optimize both the policyfunction and the value function via function approximation:  neural networks.  The actor networkis given a state, and it calculates a probability distribution over a set of actions.  i.e;  it outputsthe best actions that can be taken.  This output is then fed into the Critic network that evaluatesthose actions.  The result is an interplay of two networks where the actor decides the best actionsand the critic estimates how good these actions are.
+* One of the efficient alternatives in this case is to use actor critic algorithm along with deepfunction approximation.  With this method it is possible to learn high dimensional and continuousaction space
+* In DDPG computation can be heavy which is why we learn in mini batches rather than learningentirely on the online environment.  In order to achieve this a Replay Buffer is used.  The oldsamples from replay buffer are deleted when it reaches to the maximum memory.  So, at each timecritic  updates  by  evaluating  at  each  timestamp.   Size  of  replay  buffer  is  fixed  rather  large  thanthe one used in Deep Q network as DDPG is an off-policy algorithm.  This increased size allowsalgorithm to learn from more transitions.
+* ![alt text](https://github.com/Tejan4422/LunarLander_ddpg/blob/main/lunarlanderpost.png)
+* ![alt text](https://github.com/Tejan4422/LunarLander_ddpg/blob/main/ddpg_set1.png "Model Performance")
+
+## Project 2: Stock Market Predictions
 * created a website which can predict following
     * HIGHEST values of a particular company
     * LOWEST values of a particular company
@@ -15,7 +22,7 @@
 ![alt text](https://github.com/Tejan4422/StockAnalysis-/blob/master/Case%20Studies/Fig_AXIS_High.png "Model Performance")
 ![alt text](https://github.com/Tejan4422/StockAnalysis-/blob/master/Case%20Studies/Fig_AXIS_Close.png "Model Performance")
 
-## Project 2: Convolutional Network to Detect Pneumonia 
+## Project 3: Convolutional Network to Detect Pneumonia 
 # Overview
   * Building a CNN with TensorFlow backend
   * Test on Single Image
@@ -40,7 +47,7 @@ Following is the MRI of a Normal Person Pneumonia -ve
 ![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/loss.png "Model Summary")
 ![alt text](https://github.com/Tejan4422/Pneumonia_cnn/blob/master/Model_deployment.png "Final Product")
 
-## Project 3:Glassdoor Job Analysis
+## Project 4 :Glassdoor Job Analysis
 ## Overview
 * Created a tool that estimates data science salaries (MAE ~ $ 11K) to help data scientists negotiate their income when they get a job.
 * Scraped over 1000 job descriptions from glassdoor using python and selenium
@@ -101,7 +108,7 @@ The Random Forest model far outperformed the other approaches on the test and va
 *	**Linear Regression**: MAE = 18.86
 *	**Ridge Regression**: MAE = 19.67
 
-## Project 4: FIFA 19 Analysis to help Managers make better signings
+## Project 5 : FIFA 19 Analysis to help Managers make better signings
 ## Overview
 * Tasks achieved
     * Exploratory data analysis on FIFA 19 dataset 
@@ -125,7 +132,7 @@ I created a small dataset of youth prodigies who have show  a great potential an
 ![alt text](https://github.com/Tejan4422/Fifa-19-Prediction-and-analysis/blob/master/workrate_youth.png "youth workrate")
 
 
-## Project 5: Wine Task(NLP and variety of berries classification)
+## Project 6 : Wine Task(NLP and variety of berries classification)
 ## Overview
 * Tasks achieved
     * Exploratory data analysis on training dataset 
@@ -171,7 +178,7 @@ Neural Network withour hyper parameter tuning was able to record accuracy of 52%
 with hyperparameter tuning because of long waitings in training but with training accuracy close to 60% can be achieved with this
 neural network
 
-## Project 6:Testing Best fit Classification Algorithm & Hyperparametertuning
+## Project 7 :Testing Best fit Classification Algorithm & Hyperparametertuning
 * Dataset used : Titanic
 * Objective : Based on the data try to classify who would be saved after the disaster since there are very few life saver boats
 * Algorithms Used:
@@ -180,7 +187,7 @@ neural network
    * Decision Tree
    * MLP Classifier
 
-# Project 7 : Corona Analysis
+# Project 8  : Corona Analysis
 ## Case Studies
    * Exploratory Data Analysis on Covid19 Dataset 
    * Implementation on Indian Subcontinent
@@ -198,7 +205,7 @@ neural network
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/prophet_recovered_components.png "Prophet Recovered components")
 ![alt text](https://github.com/Tejan4422/CoronaData/blob/master/prophet_recovered.png "Pophet Recovered")
 
-# Project 8 : YouTube Trending Analysis
+# Project 9  : YouTube Trending Analysis
 ## Overview
 * Scraping data from youtube
   * Youtube API key is important in case you want to connect to youtube Dataset
